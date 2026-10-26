@@ -1,0 +1,184 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Arial, "Malgun Gothic", sans-serif;
+  color: #24352c;
+  background: #f6f8f4;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.container {
+  width: min(920px, calc(100% - 36px));
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 64px 0 54px;
+  color: white;
+  background: linear-gradient(135deg, #176b4d, #58a875);
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+h1 {
+  margin: 14px 0;
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.25;
+}
+
+.subtitle {
+  color: #e8f5ec;
+  max-width: 580px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+  padding: 8px;
+  max-width: 650px;
+  border-radius: 14px;
+  background: white;
+}
+
+.search-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 13px 24px;
+  color: white;
+  background: #176b4d;
+  border: 0;
+  border-radius: 9px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.search-hint {
+  font-size: 13px;
+  color: #e8f5ec;
+}
+
+.main-content {
+  padding-top: 36px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chip {
+  padding: 10px 17px;
+  color: #176b4d;
+  background: #e8f3e9;
+  border: 1px solid #d2e6d5;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.chip:hover {
+  background: #d8ebdc;
+}
+
+.result-section {
+  margin-top: 28px;
+}
+
+.empty-state,
+.result-card,
+.notice {
+  padding: 26px;
+  background: white;
+  border: 1px solid #e5eae3;
+  border-radius: 16px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 42px 20px;
+}
+
+.empty-icon {
+  font-size: 40px;
+}
+
+.empty-state p,
+.notice p {
+  color: #68766d;
+}
+
+.result-card h2 {
+  margin-top: 0;
+}
+
+.category {
+  display: inline-block;
+  padding: 5px 11px;
+  color: #176b4d;
+  background: #e8f3e9;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.result-card li {
+  margin: 8px 0;
+}
+
+.warning {
+  padding: 12px 14px;
+  background: #fff7e4;
+  border-radius: 8px;
+  color: #79591b;
+}
+
+.notice {
+  margin-top: 26px;
+}
+
+footer {
+  padding: 24px 16px;
+  color: #e8f5ec;
+  background: #203d30;
+  text-align: center;
+  font-size: 13px;
+}
+
+@media (max-width: 520px) {
+  .hero {
+    padding: 44px 0;
+  }
+
+  .search-form button {
+    padding: 12px 16px;
+  }
+
+  .empty-state,
+  .result-card,
+  .notice {
+    padding: 20px;
+  }
+}

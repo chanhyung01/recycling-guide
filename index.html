@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>분리배출 안내 서비스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <p class="eyebrow">ECO LIFE</p>
+      <h1>올바른 분리배출,<br>검색으로 쉽게!</h1>
+      <p class="subtitle">
+        버리는 물건의 이름을 검색하고 올바른 배출 방법을 확인하세요.
+      </p>
+
+      <form id="search-form" class="search-form">
+        <input
+          id="search-input"
+          type="search"
+          placeholder="예: 페트병, 종이컵, 건전지"
+          aria-label="분리배출할 물건 검색"
+          autocomplete="off"
+        >
+        <button type="submit">검색</button>
+      </form>
+
+      <p class="search-hint">무엇을 어떻게 버려야 할지 찾아보세요.</p>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <section class="quick-search">
+      <h2>자주 찾는 품목</h2>
+      <div class="chips">
+        <button class="chip" type="button" data-item="페트병">페트병</button>
+        <button class="chip" type="button" data-item="종이컵">종이컵</button>
+        <button class="chip" type="button" data-item="건전지">건전지</button>
+        <button class="chip" type="button" data-item="유리병">유리병</button>
+        <button class="chip" type="button" data-item="캔">캔</button>
+      </div>
+    </section>
+
+    <section id="result-section" class="result-section" aria-live="polite">
+      <div class="empty-state">
+        <div class="empty-icon">♻️</div>
+        <h2>분리배출 방법을 검색해 보세요</h2>
+        <p>품목을 검색하면 배출 방법과 주의사항을 안내해 드립니다.</p>
+      </div>
+    </section>
+
+    <section class="notice">
+      <h2>배출 전 확인하세요</h2>
+      <p>
+        분리배출 기준은 지역별로 다를 수 있습니다.
+        실제 배출 시에는 거주 지역의 지자체 안내도 확인하세요.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>분리배출 안내 서비스 · 올바른 자원순환 실천하기</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
